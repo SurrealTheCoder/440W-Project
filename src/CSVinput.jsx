@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-
+import './CSV.css'
 
 function DynamicCSVInput() {
     const [numCSVFiles, setNumCSVFiles] = useState(1); // Initial number of CSV files
@@ -23,18 +22,18 @@ function DynamicCSVInput() {
   
     return (
       <>
-        <input
+        <input className='CSVinput'
           type="number"
           value={numCSVFiles}
           onChange={handleNumCSVFilesChange}
           min={1}
         />
-        <Link to="/csv-input">
-          <button onClick={handleAddCSVFiles}>Add CSV Files</button>
-        </Link>
+          <button className='CSVadd' onClick={handleAddCSVFiles}>Add CSV Files</button>
+          <button className='CSVsubmit'>Submit to Compile</button>
         {csvFiles}
       </>
     );
-  }
+}
   
   export default DynamicCSVInput;
+

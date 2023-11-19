@@ -1,5 +1,6 @@
 import React from 'react';
-import {Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import logo from './logo-no-background.png'
 
 function Homepage() {
     return (
@@ -7,17 +8,19 @@ function Homepage() {
     <div className="App">
     <header className="App-header">
   
-    <img src='./logo-no-background.png' className="App-logo" alt="logo" />
+    <img src={logo} className="App-logo" alt="logo" />
             <p>Welcome to Atelier Labs. Select either option below to continue.</p>
   
             <div className="Buttons">
-              <Link to="/csv-input">
+              <Link to="/CSV">
                 <button className="CSV-Button" name="submit" type="submit">
                   CSV Compiler
                 </button>
               </Link>
-  
-              <button className="Form-Button">Form Creator</button>
+              <Link to="/Forms">
+              <button className="Form-Button">Form Creator
+              </button>
+              </Link>
             </div>
           </header>
         </div>
