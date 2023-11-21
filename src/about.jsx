@@ -9,7 +9,6 @@ import './navbar.css'
                         <img src='./logo-no-background.png' className='logoimg'></img>
                         <nav>
                             <a href='./about'>About Us</a>
-                            <a></a>
                         </nav>
                     </div>
                 </div>

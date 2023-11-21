@@ -9,15 +9,10 @@ function Homepage() {
     <header className="App-header">
   
     <img src={logo} className="App-logo" alt="logo" />
-            <p>Welcome to Atelier Labs. Select either option below to continue.</p>
+            <p>Welcome to Atelier Labs. Select the option below to continue.</p>
   
             <div className="Buttons">
-              <Link to="/CSV">
-                <button className="CSV-Button" name="submit" type="submit">
-                  CSV Compiler
-                </button>
-              </Link>
-              <Link to="/Forms">
+              <Link to="/FormHome">
               <button className="Form-Button">Form Creator
               </button>
               </Link>
